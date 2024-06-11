@@ -65,7 +65,7 @@ print(crime_df['DATE_OCC'].value_counts())
 
 #Victim sex crime analysis
 plt.figure(figsize=(15,3))
-sns.histplot(crime_df['Vict_Sex'],bins=3)  #histogram  plot
+sns.histplot(crime_df['Vict_Sex'],bins=3,kde=True)  #histogram  plot
 plt.show()
 
 # Day of week crime analysis
